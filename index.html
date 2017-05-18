@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<meta charset='utf-8'/>
+<title>Hatstack CTF</title>
+
+<link rel=stylesheet href='res/css/style.css'>
+<link rel=stylesheet href='res/css/sweetalert.css'>
+
+<main class=wrap>
+	<header>
+		Welcome, <span class=username>Guest</span>
+		<span class=hspace></span>
+		<img src='res/img/points.png' width=16> <span class='points'>0</span>
+
+		<nav></nav>
+	</header>
+
+	<noscript>
+		<span class=large>Javascript required</span>
+		<strong>Sorry, Javascript is required for this page.</strong>
+	</noscript>
+
+	<section class=upload></section>
+
+	<h2>Leaderboard</h2>
+	<section class=leaderboard>
+		<h2 class=loading>Loading javascript...</h2>
+	</section>
+
+	<span id=challengesContainer>
+		<h2>Challenges</h2>
+		<section class=challenges></section>
+	</span>
+</main>
+<footer>
+	<div class=wrap>
+		<span class=logo></span>
+
+		<div class=flag>
+			<img src='res/img/flag.svg' width=16>
+			<input class=field placeholder="hat{...}">
+			<input type=button value=Submit class=submit>
+		</div>
+	</div>
+</footer>
+
+<script src='res/js/generic.js'></script>
+<script src='res/js/sweetalert.min.js'></script>
+<script src='res/js/app.js'></script>

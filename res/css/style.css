@@ -1,0 +1,144 @@
+.large {
+	font-size: 18pt;
+}
+body {
+	background-color: #23221F;
+	color: #ECECEC;
+	font-family: Arial;
+}
+.wrap {
+	min-width: 644px;
+	max-width: 1288px;
+	margin: 0 auto 0 auto;
+}
+main.wrap {
+	margin-bottom: 90px;
+}
+main h2 {
+	margin-top: 40px;
+	color: #6D6D6D;
+	font-size: 24pt;
+	font-weight: normal;
+}
+header {
+	padding-top: 16px;
+}
+header img {
+	margin-left: 20px;
+	margin-right: 7px;
+	position: relative;
+	top: 2px;
+}
+nav {
+	float: right;
+	width: 500px;
+	text-align: right;
+}
+nav a {
+	color: #0AC4AA;
+	margin: 8px 4px;
+	padding: 8px;
+	cursor: pointer;
+}
+nav a:hover {
+	border-bottom: 1px solid;
+}
+nav a.button {
+	border: 1px solid;
+	border-radius: 5px;
+}
+nav a.button:hover {
+	opacity: 0.8;
+}
+.leaderboard .challenge img.leadericon {
+	width: 32px;
+}
+.challenge {
+	display: inline-block;
+	position: relative;
+	margin: 4px;
+	background: #1B1812;
+	padding: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	width: 280px;
+}
+.challenges .challenge img.challicon {
+	width: 32px;
+}
+.challenge .center {
+	display: inline-block;
+	position: relative;
+	left: 15px;
+	color: #999999;
+	font-size: 14px;
+}
+h3 {
+	font-weight: normal;
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-top: 0;
+	color: #6D6D6D;
+}
+.challenge h3 img {
+	width: 16px;
+	margin-right: 10px;
+}
+.challenge .start {
+	position: absolute;
+	right: 10px;
+	top: 18px;
+	background-color: #E2CC2B;
+	padding: 10px;
+	color: #000;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.challenge .start:hover {
+	opacity: 0.8;
+}
+.challenge .start.solved {
+	background-color: #0AC3A9;
+}
+footer {
+	padding: 16px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #333;
+	color: #fff;
+}
+footer .logo {
+	font-size: 18pt;
+	color: #9b9b9b;
+	display: inline-block;
+}
+footer .flag {
+	float: right;
+	width: 300px;
+	background-color: #23221F;
+	padding: 0;
+	position: relative;
+}
+footer .flag img {
+	position: relative;
+	top: 4px;
+	left: 8px;
+}
+footer .flag .field {
+	background: transparent;
+	border: 0;
+	color: #fff;
+	padding: 0px 0px 0px 25px;
+	position: relative;
+	left: -15px;
+}
+footer .flag .submit {
+	margin: 0;
+	border: 0;
+	background-color: yellow;
+	padding: 7px;
+	position: relative;
+	left: 8px;
+}

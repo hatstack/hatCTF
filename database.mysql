@@ -1,0 +1,29 @@
+CREATE TABLE IF NOT EXISTS users (id INT PRIMARY KEY AUTO_INCREMENT,
+	username VARCHAR(255) NOT NULL,
+	password VARCHAR(255) NOT NULL,
+	permissions INT NOT NULL DEFAULT 0,
+	points INT NOT NULL DEFAULT 0,
+	lastupdate DOUBLE NOT NULL DEFAULT 0);
+
+CREATE TABLE IF NOT EXISTS solves (id INT PRIMARY KEY AUTO_INCREMENT,
+	challenge INT NOT NULL,
+	userid INT NOT NULL,
+	fromIP VARCHAR(45) NOT NULL, -- IP addresses can be up to 45 characters, excluding an interface identifier
+	flag VARCHAR(255) NOT NULL,
+	timestamp DOUBLE NOT NULL);
+
+CREATE TABLE IF NOT EXISTS challenges (id INT PRIMARY KEY AUTO_INCREMENT,
+	-- folder VARCHAR(100) NOT NULL DEFAULT '', -- The folder in /challenges
+	title VARCHAR(255) NOT NULL, -- Display title
+	description VARCHAR(2000) NOT NULL,
+	byuser INT NOT NULL, -- the user that uploaded the challenge
+	flag VARCHAR(255) NOT NULL,
+	enabled TINYINT NOT NULL DEFAULT 0,
+	points INT NOT NULL);
+
+CREATE TABLE IF NOT EXISTS flagattempts (id INT PRIMARY KEY AUTO_INCREMENT,
+	userid INT NOT NULL,
+	flag VARCHAR(255) NOT NULL,
+	fromIP VARCHAR(45) NOT NULL, -- IP addresses can be up to 45 characters, excluding an interface identifier
+	timestamp DOUBLE NOT NULL);
+
